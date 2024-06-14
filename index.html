@@ -39,15 +39,34 @@
                 a:hover {
                         text-decoration: underline;
                 }
-        </style>
+                
+.fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .content {
+            margin-top: 60px; /* Adjust according to the fixed header height */
+        }
+    </style>
 </head>
-
 <body>
-
-     <h1>Home Page</h1>
+    <div class="fixed-header">
+        <h1>Home Page</h1>
+        <a href="page1.html">Page 1</a>
+    </div>
+    <div class="content">
+    
     <ol>
         <li><a href="page1.html">Page 1</a></li>
     </ol>
+        </div>
 
 </body>
 
