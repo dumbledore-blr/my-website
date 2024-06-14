@@ -40,11 +40,33 @@
         a:hover {
             text-decoration: underline;
         }
+
+         /* Pin the header and back link to the top */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .content {
+            margin-top: 60px; /* Adjust according to the fixed header height */
+        }
     </style>
 </head>
 
 <body>
 
+    <h1>Page 1</h1>
+    <div class="fixed-header">
+        <h1>Home Page</h1>
+        <a href="page1.html">Page 1</a>
+    </div>
+        <div class="content">
     <ol>
         <li><a
                 href="https://1024terabox.com/s/13L0BDqJcFSdue281EsuTfQ">https://1024terabox.com/s/13L0BDqJcFSdue281EsuTfQ</a>
@@ -965,7 +987,8 @@
                 href="https://teraboxapp.com/s/1zx2-0EXjF2mmqEkBUGA59A">https://teraboxapp.com/s/1zx2-0EXjF2mmqEkBUGA59A</a>
         </li>
     </ol>
-
+</div>
+    <a href="index.html">Back to Home</a>
 </body>
 
 </html>
